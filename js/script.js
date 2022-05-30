@@ -8,12 +8,8 @@ if (randomNumber == '1') {
 }
 if (randomNumber == '2') {
     computerMove = 'papier';
-  } else {
-    computerMove = 'nieznany ruch';
-  }
+  } 
   if (randomNumber == '3') {
     computerMove = 'nożyce';
-  } else {
-    computerMove = 'nieznany ruch';
-  }
+  } 
 printMessage('Mój ruch: ' + computerMove);
