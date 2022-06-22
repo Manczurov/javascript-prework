@@ -1,7 +1,43 @@
-.h2 {
-  font-size: 40px;
-  font-family: "Fascinate", cursive;
-  color: rgb(36, 11, 11);
+h2 {
+  font-size: 70px;
+  font-family: "Caveat", cursive;
+  color: rgb(173, 154, 126);
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGVBQUE7RUFDQSxpQ0FBQTtFQUNBLHNCQUFBO0FDQ0oiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+.btn-one {
+  border-color: #759c94;
+  font-size: 35px;
+  color: #000000;
+  background-image: linear-gradient(90deg, #929292 50%, transparent 100%);
+  border-width: 15px;
+  margin: 20px 0 20px 0;
+  border-radius: 10%;
+}
+
+.btn-two {
+  border-color: #d7dddc;
+  font-size: 35px;
+  color: #b39148;
+  background-image: linear-gradient(90deg, #696969 50%, transparent 100%);
+  border-width: 15px;
+  margin: 20px 0 20px 0;
+  border-radius: 10%;
+}
+
+.btn-three {
+  border-color: #b3b3b3;
+  font-size: 35px;
+  color: #000000;
+  background-image: linear-gradient(90deg, #c7c7c7 50%, transparent 100%);
+  border-width: 15px;
+  margin: 20px 0 20px 0;
+  border-radius: 10%;
+}
+
+.messages {
+  font-size: 40px;
+  font-family: "Caveat", cursive;
+  color: #759c94;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGVBQUE7RUFDQSw4QkFKTztFQUtQLHlCQUFBO0FDREo7O0FESUE7RUFDSSxxQkFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EsdUVBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0Esa0JBQUE7QUNESjs7QURLQTtFQUNJLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7RUFDQSx1RUFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkFBQTtBQ0ZKOztBREtBO0VBQ0kscUJBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtFQUNBLHVFQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGtCQUFBO0FDRko7O0FES0E7RUFDSSxlQUFBO0VBQ0EsOEJBekNPO0VBMENQLGNBQUE7QUNGSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

@@ -1,5 +1,45 @@
-.h2 {
+$font-one: 'Caveat', cursive;
+
+h2 {
+    font-size: 70px;
+    font-family: $font-one;
+    color: rgb(173, 154, 126);
+}
+
+.btn-one {
+    border-color: #759c94;
+    font-size: 35px;
+    color: #000000;
+    background-image: linear-gradient(90deg, #929292 50%, transparent 100%);
+    border-width: 15px;
+    margin: 20px 0 20px 0; 
+    border-radius: 10%;
+}
+    
+
+.btn-two {
+    border-color: #d7dddc;
+    font-size: 35px;
+    color: #b39148;
+    background-image: linear-gradient(90deg, #696969 50%, transparent 100%);
+    border-width: 15px;
+    margin: 20px 0 20px 0; 
+    border-radius: 10%;
+}
+
+.btn-three {
+    border-color: #b3b3b3;
+    font-size: 35px;
+    color: #000000;
+    background-image: linear-gradient(90deg, #c7c7c7 50%, transparent 100%);
+    border-width: 15px;
+    margin: 20px 0 20px 0; 
+    border-radius: 10%;
+}
+
+.messages {
     font-size: 40px;
-    font-family: 'Fascinate', cursive;
-    color: rgb(36, 11, 11);
+    font-family: $font-one;
+    color:#759c94;
+
 }
