@@ -1,4 +1,4 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+var computerMove, playerMove, randomNumber, playerInput;
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
@@ -30,43 +30,42 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
-
-var buttonTest, buttonRock, buttonPaper, buttonRock;
-
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
+const buttonTest = document.getElementById('button-test');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  playerInput = argButtonName;
+const playerInput = argButtonName;
   console.log('Wpisana odpowiedź to: ' + playerInput);
-  if (playerInput == '1') {
-    playerMove = 'kamień';
-  } else if (playerInput == '2') {
-    playerMove = 'papier';
-  } else if (playerInput == '3') {
-    playerMove = 'nożyce';
-  } else {
-    playerMove = 'Błędny ruch';
-    printMessage('Błędny ruch');
-  }
+  const playerMove=getMoveName (playerInput);
+  // if (playerInput == '1') {
+  //   playerMove = 'kamień';
+  // } else if (playerInput == '2') {
+  //   playerMove = 'papier';
+  // } else if (playerInput == '3') {
+  //   playerMove = 'nożyce';
+  // } else {
+  //   playerMove = 'Błędny ruch';
+  //   printMessage('Błędny ruch');
+  // }
   printMessage('Twój ruch: ' + playerMove);
 
   randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
-  if (randomNumber == '1') {
-    computerMove = 'kamień';
-  } else if (randomNumber == '2') {
-    computerMove = 'papier';
-  } else if (randomNumber == '3') {
-    computerMove = 'nożyce';
-  } else {
-    computerMove = 'nieznany ruch';
-  }
+  const computerMove=getMoveName (randomNumber)
+  // if (randomNumber == '1') {
+  //   computerMove = 'kamień';
+  // } else if (randomNumber == '2') {
+  //   computerMove = 'papier';
+  // } else if (randomNumber == '3') {
+  //   computerMove = 'nożyce';
+  // } else {
+  //   computerMove = 'nieznany ruch';
+  // }
   printMessage('Mój ruch: ' + computerMove);
   displayResult(playerMove, computerMove)
 }
