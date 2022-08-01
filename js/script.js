@@ -1,5 +1,3 @@
-var computerMove, playerMove, randomNumber, playerInput;
-
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
@@ -42,30 +40,11 @@ function buttonClicked(argButtonName) {
 const playerInput = argButtonName;
   console.log('Wpisana odpowiedź to: ' + playerInput);
   const playerMove=getMoveName (playerInput);
-  // if (playerInput == '1') {
-  //   playerMove = 'kamień';
-  // } else if (playerInput == '2') {
-  //   playerMove = 'papier';
-  // } else if (playerInput == '3') {
-  //   playerMove = 'nożyce';
-  // } else {
-  //   playerMove = 'Błędny ruch';
-  //   printMessage('Błędny ruch');
-  // }
   printMessage('Twój ruch: ' + playerMove);
 
   randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   const computerMove=getMoveName (randomNumber)
-  // if (randomNumber == '1') {
-  //   computerMove = 'kamień';
-  // } else if (randomNumber == '2') {
-  //   computerMove = 'papier';
-  // } else if (randomNumber == '3') {
-  //   computerMove = 'nożyce';
-  // } else {
-  //   computerMove = 'nieznany ruch';
-  // }
   printMessage('Mój ruch: ' + computerMove);
   displayResult(playerMove, computerMove)
 }
